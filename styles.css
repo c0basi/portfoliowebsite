@@ -205,9 +205,7 @@ ul.header__main-nav--links li a:active:after {
 	ul.header__main-nav--links li {
 		opacity: 0;
 	}
-	ul.header__main-nav--links li.fade {
-		opacity: 1;
-	}
+
 	ul.header__main-nav--links li:nth-child(1) {
 		transition: all 0.5s ease-in-out;
 	}
@@ -225,5 +223,8 @@ ul.header__main-nav--links li a:active:after {
 	}
 	ul.header__main-nav--links li:nth-child(6) {
 		transition: all 1.5s ease-in-out;
+	}
+	ul.header__main-nav--links li.fade {
+		opacity: 1;
 	}
 }
