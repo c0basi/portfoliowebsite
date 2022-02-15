@@ -490,7 +490,25 @@ section#services {
 	ul.header__main-nav--links li.fade {
 		opacity: 1;
 	}
+	/* showcase section */
 	section#showcase {
 		background-position: 80%;
+	}
+	/* service section */
+	section#services {
+		padding: 6rem 3rem 2rem;
+	}
+
+	.service {
+		padding: calc(1rem + 2vw);
+		margin-bottom: calc(1rem + 2vw);
+	}
+
+	.services--title {
+		font-size: calc(1.2rem + 2vw);
+	}
+
+	.services--para {
+		font-size: calc(0.8rem + 1.5vw);
 	}
 }
