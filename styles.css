@@ -611,6 +611,43 @@ section#testimonials {
 	font-family: 'Indie Flower', cursive;
 	font-size: 1.5rem;
 }
+
+/*  Contact me section */
+
+section#contact {
+	height: 100vh;
+	background-image: url(img/full-bg-03.jpg);
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-end;
+}
+.contact__form {
+	display: flex;
+	flex-basis: 40rem;
+	flex-direction: column;
+	background-color: var(--tertiary-color-m);
+}
+
+.contact__form input,
+.contact__form textarea {
+	display: block;
+	width: 100%;
+	background-color: transparent;
+	color: white;
+	font-family: 'Indie Flower', cursive;
+	padding: 1.5rem;
+	letter-spacing: 0.3rem;
+	border: none;
+	border-bottom: var(--secondary-color) solid 0.1rem;
+}
+input[type='submit'] {
+	border: none;
+}
+
+.contact__form textarea {
+	height: 30vh;
+}
+
 /*  media query for large screens */
 @media screen and (min-width: 1600px) {
 	body {
@@ -747,5 +784,8 @@ section#testimonials {
 		display: flex;
 		flex-direction: column;
 		justify-content: flex-end;
+	}
+	section#contact {
+		background-position: 10% 5%;
 	}
 }
