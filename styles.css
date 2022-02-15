@@ -432,7 +432,7 @@ section#skills {
 	position: relative;
 	background-color: var(--primary-color);
 	padding: 0.5rem;
-	border-radius: 6px;
+	border-radius: 3rem;
 	display: block;
 	width: 100%;
 	margin-bottom: 2rem;
@@ -442,10 +442,121 @@ section#skills {
 	position: relative;
 	display: inline-block;
 	height: 2rem;
+	border-radius: 3rem;
 	vertical-align: middle;
 	background-color: var(--secondary-color);
 }
+.skills__design--progress__1 {
+	animation: design 2s infinite cubic-bezier(1, 0, 0, 1);
+}
 
+@keyframes design {
+	0% {
+		width: 0%;
+	}
+	100% {
+		width: 80%;
+	}
+}
+
+.skills__design--progress__2 {
+	animation: Print 2s infinite cubic-bezier(1, 0, 0, 1);
+}
+
+@keyframes Print {
+	0% {
+		width: 0%;
+	}
+	100% {
+		width: 60%;
+	}
+}
+
+.skills__design--progress__3 {
+	animation: Logo 2s infinite cubic-bezier(1, 0, 0, 1);
+}
+
+@keyframes Logo {
+	0% {
+		width: 0%;
+	}
+	100% {
+		width: 70%;
+	}
+}
+
+.skills__design--progress__4 {
+	animation: Graphic 2s infinite cubic-bezier(1, 0, 0, 1);
+}
+
+@keyframes Graphic {
+	0% {
+		width: 0%;
+	}
+	100% {
+		width: 90%;
+	}
+}
+
+.skills__coding--progress__1 {
+	animation: html 2s infinite cubic-bezier(1, 0, 0, 1);
+}
+
+@keyframes html {
+	0% {
+		width: 0%;
+	}
+	100% {
+		width: 95%;
+	}
+}
+
+.skills__coding--progress__2 {
+	animation: Javascript 2s infinite cubic-bezier(1, 0, 0, 1);
+}
+
+@keyframes Javascript {
+	0% {
+		width: 0%;
+	}
+	100% {
+		width: 95%;
+	}
+}
+
+.skills__coding--progress__3 {
+	animation: Python 2s infinite cubic-bezier(1, 0, 0, 1);
+}
+
+@keyframes Python {
+	0% {
+		width: 0%;
+	}
+	100% {
+		width: 85%;
+	}
+}
+
+.skills__coding--progress__4 {
+	animation: SQL 2s infinite cubic-bezier(1, 0, 0, 1);
+}
+
+@keyframes SQL {
+	0% {
+		width: 0%;
+	}
+	100% {
+		width: 87%;
+	}
+}
+/*  media query for large screens */
+@media screen and (min-width: 1800px) {
+	body {
+		width: 1800px;
+		margin: 0 auto;
+		background-color: var(--tertiary-color);
+	}
+}
 /* media query max-width 900px  */
 @media screen and (max-width: 900px) {
 	section#showcase {
@@ -550,11 +661,15 @@ section#skills {
 		margin-bottom: calc(1rem + 2vw);
 	}
 
-	.services--title {
+	.services--title,
+	.skills__design--tiitle,
+	.skills__coding--tiitle {
 		font-size: calc(1.2rem + 2vw);
 	}
 
-	.services--para {
+	.services--para,
+	.skills__design h4,
+	.skills__coding h4 {
 		font-size: calc(0.8rem + 1.5vw);
 	}
 }
